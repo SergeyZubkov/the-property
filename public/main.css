@@ -4,8 +4,8 @@
 
 body {
     margin: 0;
-    padding: 60px 0 0 0;
-    background: #E5E5E5;
+    padding: 0;
+    background: #f4f4f4;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -16,7 +16,13 @@ img {
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 60px 0 20px;
 } 
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
 
 .main {
     max-width: 870px;
@@ -114,4 +120,33 @@ img {
 .card__address {
     font-size: 14px;
     color: #777;
+}
+
+/* Button more */
+
+.btn-more {
+    background: #e5e5e5;
+    border: none;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #4290C9;
+    border-radius: 4px;
+    height: 80px;
+    transition: background-color .2 ease-in;
+    cursor: pointer;
+}
+
+.btn-more:hover {
+    background: #e1e1e1;
+}
+
+.btn-more img {
+    display: inline-block;
+    vertical-align: bottom;
 }
