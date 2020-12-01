@@ -192,29 +192,101 @@
                         <img src="./icons/chevron-up.svg" alt="">
                     </button>
                 </div>  
-                <div class="collapse">
-                    <div class="filter-metro__content">
-                       <div class="filter-metro__checkboxs">
-                            <div class="filter-metro__checkbox">
-                                <input type="checkbox" id=">10" class="km-checkbox">
-                                <label for=">10">< 10</label>
-                            </div>
-                            <div class="filter-metro__checkbox">
-                                <input type="checkbox" id="10-20" name='близость к метро' class="km-checkbox">
-                                <label for="10-20">10-20</label>
-                            </div>
-                            <div class="filter-metro__checkbox">
-                                <input type="checkbox" id="20-30" name='близость к метро' class="km-checkbox">
-                                <label for="20-30">20-30</label>
-                            </div>
-                            <div class="filter-metro__checkbox">
-                                <input type="checkbox" id="30" name='близость к метро' class="km-checkbox">
-                                <label for="30">30+</label>
-                            </div>
+                <div class="filter-metro__content collapse">
+                    <div class="filter-metro__checkboxs">
+                        <div class="filter-metro__checkbox">
+                            <input type="checkbox" id=">10"  value='>10' name='близость к метро' class="km-checkbox">
+                            <label for=">10">< 10</label>
                         </div>
-                        <button class="btn-any">Любая</button>  
+                        <div class="filter-metro__checkbox">
+                            <input type="checkbox" id="10-20" value="10-20" name='близость к метро' class="km-checkbox">
+                            <label for="10-20">10-20</label>
+                        </div>
+                        <div class="filter-metro__checkbox">
+                            <input type="checkbox" id="20-30" value="20-30" name='близость к метро' class="km-checkbox">
+                            <label for="20-30">20-30</label>
+                        </div>
+                        <div class="filter-metro__checkbox">
+                            <input type="checkbox" id="30" value="30" name='близость к метро' class="km-checkbox">
+                            <label for="30">30+</label>
+                        </div>
                     </div>
+                    <button class="btn-any">Любая</button>  
+                </div>   
+            </div>
+            <div class="sidebar__filter">
+                <div class="filter-header">
+                   <h4 class="filter-title">Срок сдачи</h4>
+                    <button class="btn-filter">
+                        <img src="./icons/chevron-up.svg" alt="">
+                    </button>
+                </div>  
+                <div class="filter-term__content">
+                    <div class="filter-termr-adios">
+                        <div class="filter-term__radio">
+                            <input type="radio" id="any" name='term' class="term-radio">
+                            <label for="any">Любой</label>
+                        </div>
+                        <div class="filter-term__radio">
+                            <input type="radio" id="in-use" name='term' class="term-radio">
+                            <label for="in-use">Сдан</label>
+                        </div>
+                        <div class="filter-term__radio">
+                            <input type="radio" id="current-year" name='term' class="term-radio">
+                            <label for="current-year">В этом году</label>
+                        </div>
+                        <div class="filter-term__radio">
+                            <input type="radio" id="next-year" name='term' class="term-radio">
+                            <label for="next-year">В следующем году</label>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="sidebar__filter">
+                <div class="filter-header">
+                   <h4 class="filter-title">Дополнительные опции</h4>
+                    <button class="btn-filter">
+                        <img src="./icons/chevron-up.svg" alt="">
+                    </button>
+                </div>  
+                <div class="filter-options__content collapse">
+                    <div class="filter-options__checkboxs">
+                        <div class="filter-options__checkbox">
+                            <input type="checkbox" id="1"  value='Двор без машин' name='options' class="options-checkbox">
+                            <label for="1">Двор без машин</label>
+                        </div>
+                        <div class="filter-options__checkbox">
+                            <input type="checkbox" id="2" value="Высокие потолки" name='options' class="options-checkbox">
+                            <label for="2">Высокие потолки</label>
+                        </div>
+                        <div class="filter-options__checkbox">
+                            <input type="checkbox" id="3" value="Панорамные окна" name='options' class="options-checkbox">
+                            <label for="3">Панорамные окна</label>
+                        </div>
+                        <div class="filter-options__checkbox">
+                            <input type="checkbox" id="4" value="30" name='Есть кладовые' class="options-checkbox">
+                            <label for="4">Есть кладовые</label>
+                        </div>
+                        <div class="filter-options__checkbox">
+                            <input type="checkbox" id="5" value="30" name='Малоэтажный' class="options-checkbox">
+                            <label for="5">Малоэтажный</label>
+                        </div>
+                        <button class="btn-options-more">Показать еще</button>
+                    </div>  
                 </div>     
+            </div>
+            <div class="sidebar__filter">
+                <div class="filter-services__checkbox">
+                    <input type="checkbox" id="services" value="no-services" name='services' class="services-checkbox">
+                    <label for="services">Услуги 0%</label>
+                </div>
+            </div>
+            <div class="sidebar__buttons">
+                <button class="btn-accept">Применить фильтры</button> 
+                <button class="btn-abort">
+                    <img src="./icons/x.svg" alt="">
+                    Сбросить фильтры
+                </button>      
             </div>
         </aside>
        </div>
