@@ -184,7 +184,39 @@
             </button>
 
         </main>
-        <aside class="sidebar"></aside>
+        <aside class="sidebar">
+            <div class="sidebar__filter">
+                <div class="filter-header">
+                   <h4 class="filter-title">Близость к метро</h4>
+                    <button class="btn-filter">
+                        <img src="./icons/chevron-up.svg" alt="">
+                    </button>
+                </div>  
+                <div class="collapse">
+                    <div class="filter-metro__content">
+                       <div class="filter-metro__checkboxs">
+                            <div class="filter-metro__checkbox">
+                                <input type="checkbox" id=">10" class="km-checkbox">
+                                <label for=">10">< 10</label>
+                            </div>
+                            <div class="filter-metro__checkbox">
+                                <input type="checkbox" id="10-20" name='близость к метро' class="km-checkbox">
+                                <label for="10-20">10-20</label>
+                            </div>
+                            <div class="filter-metro__checkbox">
+                                <input type="checkbox" id="20-30" name='близость к метро' class="km-checkbox">
+                                <label for="20-30">20-30</label>
+                            </div>
+                            <div class="filter-metro__checkbox">
+                                <input type="checkbox" id="30" name='близость к метро' class="km-checkbox">
+                                <label for="30">30+</label>
+                            </div>
+                        </div>
+                        <button class="btn-any">Любая</button>  
+                    </div>
+                </div>     
+            </div>
+        </aside>
        </div>
     </div>
 </body>
